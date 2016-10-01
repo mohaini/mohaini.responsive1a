@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resproject</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<script src="js/jquery.js"></script>
+	<script>
+		//Toggle for width display
+		var showWidth = 1;
+
+			if(showWidth == 1) {
+				$(document).ready(function(){
+					$(window) .resize(function(){
+						var width = $(window).width();
+						document.getElementById('output_width').innerHTML="Window Width:"+width.toString();
+					});
+				});
+			}
+
+		#sidebar .block {
+    border-radius: 5px;
+    background: #ffffff;
+    overflow: auto;
+    padding: 10px 15px;
+    margin: 10px 0 0 10px;
+}
+
+	</script>
+</head>
+<body>
+<div id="output_width">Window Width:1263</div>
+<div id="container">
+	<header class="main-header">
+		<img id="logo" src="images/logo.png" alt="Resproject"/>
+		<nav class="main-nav">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">Learn</a></li>
+				<li><a href="#">Brainstorm</a></li>
+				<li><a href="#">Create</a></li>
+				<li><a href="#">Collaborate</a></li>
+				<li><a href="#">Teach</aa></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="main">
+		<div id="content">
+			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">First Post</a></h2>
+					<span>Created by: Mohaini Mahabob on Sept 8, 2016</span> 
+				</header>
+				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+				<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+				<a class="readmore" href="#">Read more...</a>
+			</article>
+			<article class="art2">
+				<header class="art-header">
+					<h2 class="title"><a href="#">Second Post</a></h2>
+					<span>Created by: Mohaini Mahabob on Sept 8, 2016</span> 
+				</header>
+				<p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. </p>
+				<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+				<a class="readmore" href="#">Read more...</a>
+			</article>
+		</div>
+	
+		<aside id="sidebar">
+			<div class="block">
+				<h2>Top Sidebar</h2>
+				<p>Loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+				</p>
+			</div>
+			<div class="block">
+				<h2>Mid Sidebar</h2>
+				<p>Because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+			</div>
+			<div class="block">
+				<h2>Bottom Sidebar</h2>
+				<p>Circumstances occur in which toil and pain can procure him some great pleasure.</p>
+			</div>
+		</aside>
+		
+
+	</div>
+	<div class="clr"></div>
+	<footer>
+	<p>Copyright © 2016 Mohaini Mahabob</p>
+	</footer>
+</div>
+</body>
+</html>
+
